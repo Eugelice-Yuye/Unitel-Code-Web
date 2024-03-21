@@ -1,0 +1,288 @@
+/*-----------inicial page----------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/Final_Wall_R.jpg);
+    background-position: calc();
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+  }
+
+.logo-link{
+
+    max-width: 40px;
+  }
+  
+nav{
+    display: flex;
+    margin: auto;
+    padding: 2rem 1rem;
+    top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+/*predesposição dos elementos da lista*/
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+/*cor das letras*/
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/*adicionar o line ao menu*/
+ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #4b7f52;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul li:hover::after{
+    width: 100%;
+
+}
+
+/*ajustando os dizeres da pag inical*/
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.botao_principal{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.botao_principal:hover{
+    border: 1px solid #ecf171;
+    background: #ecf171;
+    transition: 1s;
+}
+
+/*------------sobre_nós-------------------*/
+.sobre_nós{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+p{
+    color: #4b7f52;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sobre_nós_col{
+    flex-basis: 31%;
+    background: #7dd181;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.sobre_nós_col:hover{
+    box-shadow: 0 0 20px 0px #ecf171;
+}
+
+/*------------fazendas-------------------*/
+
+/*contactos*/
+
+.contactos{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0sss;
+    
+}
+
+.contactos h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #4b7f52;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-pied-piper{
+    color: #4b7f52;
+}
+
+
+/*-------------------------------------SOBRE NÓS PAGE---------------------------------------------------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: url(./images/maquinas.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #4b7f52;
+}
+
+.sub-header h1{
+    margin-bottom: 200px;
+}
+
+.sobre-nos{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.sobre-nos-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.sobre-nos-col img{
+    width: 100%;
+}
+
+.sobre-nos-col h1{
+    padding-top: 0;
+}
+
+.sobre-nos-col p{
+    padding: 15px 0 25px;
+}
+
+/*-------------------------------------CONTACTOS PAGE---------------------------------------------------------*/
+
+.location{
+    width: 90%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contacte-nos{
+    width: 80%;
+    margin: auto;
+}
+
+.contactos-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contactos-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contactos-col div .fa{
+    font-size: 28px;
+    color: #4b7f52;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contactos-col div p{
+    padding: 0;
+    color: black;
+}
+
+.contactos-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.contactos-col input, .contactos-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
